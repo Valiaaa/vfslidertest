@@ -20,41 +20,31 @@ $(document).ready(function(){
 	});
 
 	//click buttons
-	$('#default').click(function(event) {
+	$('#regular').click(function(event) {
 		// console.log('default clicked');
 		$("#content").css({
-			"--wdth": 100,
-			"--wght": 400,
-			"--XHGT": 0
+			"--wdth": 100
 		});	
 	});
 
-	$('#thincomp').click(function(event) {
+	$('#semiwide').click(function(event) {
 		$("#content").css({
-			"--wdth": 40,
-			"--wght": 100,
-			"--XHGT": 0
+			"--wdth": 150
 		});	
 	});
 
-	$('#blackext').click(function(event) {
+	$('#wide').click(function(event) {
 		$("#content").css({
-			"--wdth": 150,
-			"--wght": 900,
-			"--XHGT": 0
+			"--wdth": 200
 		});	
 	});
 
 
 	$('#random').click(function(event) {
-		let randomwidth = randomNumber(40,150);
-		let randomwght = randomNumber(100,900);
-		let randomxhgt = randomNumber(0,100);
+		let randomwidth = randomNumber(100,200);
 		
 		$("#content").css({
-			"--wdth": randomwidth,
-			"--wght": randomwght,
-			"--XHGT": randomxhgt,
+			"--wdth": randomwidth
 		});	
 	});
 
@@ -73,8 +63,7 @@ $(document).ready(function(){
 		// console.log( settingX, settingY)
 
 		$("#bigletter").css({
-			"--wdth": settingX,
-			"--wght": settingY
+			"--wdth": settingX
 		});
 		
 	});

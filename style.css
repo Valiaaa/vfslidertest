@@ -2,24 +2,24 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	background-color: darkgreen;
 }
 
 @font-face {
-  font-family: 'Magmatic';
-  src: url('fonts/magmatic-vf.woff2') format('woff2-variations'),
-  url('fonts/magmatic-vf.woff') format('woff-variations'),
-  url('fonts/magmatic-vf.ttf') format('truetype-variations');
+  font-family: 'Bebon';
+  src: url('BebonVF.woff') format('woff-variations');
 }
 
 :root{
-	--wght: 300;
-	--wdth: 120;
+	--wght: 100;
+	--wdth: 100;
 	--XHGT: 100;
 
-	--color: red;
+	--color: antiquewhite;
 }
 body{
-	font-family: 'Magmatic', sans-serif;
+	font-family: 'Arial';
+	font-weight: 100;
 	font-style: normal;
 	font-size: 30px;
 	line-height: 1.5;
@@ -28,7 +28,7 @@ body{
 }
 
 .magmatic, .magmatic *{
-	font-variation-settings: 'wght' var(--wght),'wdth' var(--wdth), 'XHGT' var(--XHGT);
+	font-variation-settings: 'wdth' var(--wdth);
 }
 
 section{
@@ -37,16 +37,18 @@ section{
 
 
 #intro{
-	font-size:30vw;
+	font-family: 'Bebon';
+	font-size:14vw;
 	line-height: 0.9;
 	text-align: center;
 }
 
 #content{
+	font-family: 'Bebon';
 	width: 33em;
 	height: 500px;
 	margin: auto;
-	--wght: 900;
+	font-weight: 100;
 }
 
 #content p{
@@ -85,8 +87,8 @@ input.axis-range{
 	text-align: center;
 }
 button{
-	font-family: 'Magmatic', sans-serif;
-	font-variation-settings: 'wght' 300,'wdth' 100, 'XHGT' 0;
+	font-family: 'Arial';
+	font-variation-settings: 'wdth' 100;
 	font-size: 1em;
 	background: white;
 	border-radius: 50%;
@@ -95,6 +97,6 @@ button{
 	padding: 1em;
 }
 button:hover{
-	color: blue;
+	color: olivedrab;
 	cursor: pointer;
 }
